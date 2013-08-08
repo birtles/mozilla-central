@@ -62,9 +62,12 @@ EXPORTS.mozilla.dom += [
     'EventSource.h',
     'Link.h',
     'NodeIterator.h',
+    'ParGroup.h',
+    'SeqGroup.h',
     'Text.h',
     'TimedItem.h',
     'Timing.h',
+    'TimingGroup.h',
     'TreeWalker.h',
 ]
 
@@ -158,8 +161,11 @@ CPP_SOURCES += [
     'nsXMLContentSerializer.cpp',
     'nsXMLHttpRequest.cpp',
     'nsXMLNameSpaceMap.cpp',
+    'ParGroup.cpp',
+    'SeqGroup.cpp',
     'TimedItem.cpp',
     'Timing.cpp',
+    'TimingGroup.cpp',
 ]
 
 EXTRA_COMPONENTS += [
