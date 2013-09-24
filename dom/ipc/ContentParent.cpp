@@ -740,6 +740,7 @@ ContentParent::CreateBrowserOrApp(const TabContext& aContext,
                 return nullptr;
             }
             tp = new TabParent(child->GetLastBridge(), aContext);
+            child->GetLastBridge()->SetChildID(id);
             constructorSender = child->GetLastBridge();
         } else if (nsRefPtr<ContentParent> cp = GetNewOrUsed(aContext.IsBrowserElement())) {
             tp = new TabParent(cp, aContext);
